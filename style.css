@@ -1,0 +1,35 @@
+/* Hero DIV STYLE */
+#hero{
+    height: 100vh;
+    background-color: burlywood;
+    padding: 50px 50px 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#hero-msg{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+}
+h1{
+    font-size: 3vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.hero-para{
+    font-size: 3vw;
+}
+#secondary-txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#scroll-para{
+    font-size: 21px;
+}
+#arrow-down{
+    width: 50px;
+    height: 50px;
+}
