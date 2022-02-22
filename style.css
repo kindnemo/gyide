@@ -20,6 +20,7 @@ h1{
 }
 .hero-para{
     font-size: 3vw;
+    font-family: 'Lusitana', serif;
 }
 #secondary-txt{
     display: flex;
@@ -45,4 +46,74 @@ h1{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+/* SLIDE SHOW */
+
+
+/* PLANS DIV */
+#plans{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 100px;
+}
+#plan-head, #plan-para-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+#plan-heading{
+    font-size: 5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+.plan-para{
+    font-size: 2rem;
+    font-family: 'Lusitana', serif;
+}
+#offer-div{
+    display: flex;
+    margin-top: 30px;
+    gap: 100px;
+    align-items: center;
+    align-items: flex-start;
+}
+.offers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    gap: 50px;
+}
+.offer-explain-div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.benefits-div{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+h3{
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+.plan-name{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+.benefit-para{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+}
+.plan-svg{
+    height: 36px;
+    width: 30px;
+    color: greenyellow;
 }
