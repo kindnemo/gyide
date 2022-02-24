@@ -1,7 +1,6 @@
 /* Hero DIV STYLE */
 #hero{
     height: 100vh;
-    background-color: burlywood;
     padding: 50px 50px 100px 50px;
     display: flex;
     flex-direction: column;
@@ -16,11 +15,12 @@
 h1{
     font-size: 3vw;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
 }
 .hero-para{
     font-size: 3vw;
     font-family: 'Lusitana', serif;
+    font-weight: 400;
 }
 #secondary-txt{
     display: flex;
@@ -39,7 +39,7 @@ h1{
 
 /* SLIDE SHOW */
 #slide-show{
-    height: 95vh;
+    height: 100vh;
     transform: all 1s;
 }
 .slideshow-image{
@@ -52,11 +52,11 @@ h1{
 
 /* PLANS DIV */
 #plans{
-    background-color: yellow;
+    background-color: #ffd016;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 100px;
+    padding: 200px 100px;
 }
 #plan-head, #plan-para-div{
     display: flex;
@@ -64,15 +64,17 @@ h1{
     align-items: center;
     gap: 20px;
     margin-bottom: 50px;
+    text-align: center;
+    text-align: center;
 }
 #plan-heading{
     font-size: 5rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lusitana', serif;
     font-weight: 800;
 }
 .plan-para{
     font-size: 2rem;
-    font-family: 'Lusitana', serif;
+    font-family: 'Raleway', sans-serif;
 }
 #offer-div{
     display: flex;
@@ -80,6 +82,7 @@ h1{
     gap: 100px;
     align-items: center;
     align-items: flex-start;
+    text-align: center;
 }
 .offers{
     display: flex;
@@ -88,12 +91,13 @@ h1{
     background-color: black;
     color: white;
     padding: 50px;
-    gap: 50px;
+    gap: 30px;
+    max-width: 390px;
 }
 .offer-explain-div{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 .benefits-div{
     display: flex;
@@ -107,6 +111,7 @@ h3{
 .plan-name{
     font-size: 2rem;
     font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
 .benefit-para{
     font-family: 'Raleway', sans-serif;
@@ -117,3 +122,194 @@ h3{
     width: 30px;
     color: greenyellow;
 }
+.buy-now{
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    box-shadow: 5px 5px #ffd016;
+    cursor: pointer;
+}
+.buy-now:active{
+    box-shadow: 5px 5px #ffd016 inset;
+}
+
+
+
+
+
+/* PLANS DIV */
+#spacer-div{
+    height: 20vh;
+    background: transparent;
+}
+#explanation,#explanation-div, #explanation-para-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#explanation{
+    gap: 100px;
+    padding: 200px 100px;
+    background-color: rgb(255, 228, 196);
+}
+#explanation-para-div{
+    gap: 10px;
+}
+#explanation-div{
+    gap: 20px;
+}
+#explain-heading {
+    font-family: 'Lusitana', serif;
+    font-size: 5rem;
+    font-weight: 800;
+}
+.explain-para{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+    /* Academic & MENTOR show case */
+#academics, #coaches{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.academic-img-div, .coaches-img-div{
+    width: 70vw;
+    height: auto;
+}
+.academic-img,.coaches-img{
+    width: 100%;
+    height: auto;
+}
+#academic-div, #coaches-div{
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#academic-header, #coaches-header{
+    color: purple;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+#coaches-header{
+    color: rgb(70, 130, 180);
+}
+.academic-para, .coaches-para{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+#centers{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    text-decoration: none;
+    color: 	rgb(128, 0, 128);
+    background-color: rgba(128, 0, 128, 0.2);
+    padding: 15px;
+    border-radius: 20px;
+}
+#mentors{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    text-decoration: none;
+    color: 	rgb(70, 130, 180);
+    background-color: rgba(0, 255, 127, 0.2);
+    padding: 15px;
+    border-radius: 20px;
+}
+/* PLANS DIV */
+
+/* WHY DIV */
+#why-div{
+    background-color: #f7f2e4;
+    display: flex;
+    flex-direction: column;
+    padding: 200px 100px;
+    align-items: center;
+    gap: 100px;
+}
+#motto-div, #why-para-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#why-heading{
+    font-family: 'Lusitana', serif;
+    font-size: 5rem;
+    font-weight: 800;
+}
+#motto-img-div{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+}
+.motto-img{
+    height: 100%; 
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* PROGRAMS */
+#programs{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffd016;
+    padding: 200px 100px 50px 100px;
+    text-align: center;
+    gap: 100px;
+    justify-content: space-between;
+}
+#footer-div, #footer-para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#cta-btn{
+    margin-top: 100px;
+    border: 2px solid black;
+    background: none;
+    padding: 25px 50px;
+    font-size: 2rem;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#cta-btn:hover{
+    background-color: white;
+}
+#contact-us{
+    display: flex;
+    justify-content: space-between;
+}
+#socials-div{
+    display: flex;
+    gap: 10px;
+}
+.socials, #address{
+    text-decoration: none;
+    color: rgb(116, 115, 115);
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.5s;
+}
+.socials:hover, #address:hover{
+    color: black;
+}
+/* PROGRAMS */
