@@ -1,3 +1,62 @@
+/* HAMBURGER MENU */
+#show-menu{
+    background: none;
+    border: none;
+    z-index: 10;
+    position: fixed;
+    margin: 20px 0 0 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#show-menu:hover{
+    background-color: white;
+}
+#menu-svg{
+    width: 3rem;
+    height: 3rem;
+}
+
+#anchor-tag{
+    z-index: 9;
+    height: 100vh;
+    background-color: #161a1d;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    padding-left: 50px;
+    position: fixed;
+}
+.anchors{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    transition: all 0.2s;
+}
+.anchors:hover{
+    color: white;
+}
+#anchor-img-div{
+    position: fixed;
+}
+.anchor-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* HAMBURGER MENU */
+
+
+
 /* Hero DIV STYLE */
 #hero{
     height: 100vh;
@@ -82,7 +141,7 @@ h1{
     gap: 100px;
     align-items: center;
     align-items: flex-start;
-    text-align: center;
+    
 }
 .offers{
     display: flex;
@@ -134,7 +193,7 @@ h3{
 .buy-now:active{
     box-shadow: 5px 5px #ffd016 inset;
 }
-
+/* PLANS DIV */
 
 
 
@@ -237,6 +296,7 @@ h3{
     flex-direction: column;
     padding: 200px 100px;
     align-items: center;
+    text-align: center;
     gap: 100px;
 }
 #motto-div, #why-para-div{
