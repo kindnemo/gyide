@@ -1,10 +1,15 @@
+html{
+    scroll-behavior:smooth;
+}
+
 /* HAMBURGER MENU */
 #show-menu{
     background: none;
     border: none;
     z-index: 10;
     position: fixed;
-    margin: 20px 0 0 30px;
+    right: 0;
+    margin: 50px 30px 0 30px;
     cursor: pointer;
     transition: all 0.5s;
     border-radius: 100%;
@@ -22,7 +27,9 @@
     height: 3rem;
 }
 
+
 #anchor-tag{
+    transform: translateX(-30vw);
     z-index: 9;
     height: 100vh;
     background-color: #161a1d;
@@ -33,6 +40,7 @@
     justify-content: center;
     padding-left: 50px;
     position: fixed;
+    transition: all 1s;
 }
 .anchors{
     display: inline-block;
@@ -46,12 +54,18 @@
     color: white;
 }
 #anchor-img-div{
+    transform: translateX(-100vw);
     position: fixed;
+    transition: all 1s;
+    height: 100vh;
+    width: 70%;
+    margin-left: 30%;
 }
 .anchor-img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    z-index: 9;
 }
 /* HAMBURGER MENU */
 
@@ -64,12 +78,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.4s;
 }
 #hero-msg{
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
     justify-content: center;
+}
+.hero-para-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 h1{
     font-size: 3vw;
@@ -80,6 +100,21 @@ h1{
     font-size: 3vw;
     font-family: 'Lusitana', serif;
     font-weight: 400;
+}
+.hero-txt{
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+.opacity{
+    opacity: 1 !important;
+}
+strong{
+    color: rgba(255, 0, 0, 0.733);
+    font-weight: bold;
 }
 #secondary-txt{
     display: flex;
@@ -92,19 +127,30 @@ h1{
 #arrow-down{
     width: 50px;
     height: 50px;
+    cursor: pointer;
+}
+#scroll-link{
+    color: black;
 }
 /* Hero DIV STYLE */
 
 
 /* SLIDE SHOW */
 #slide-show{
-    height: 100vh;
-    transform: all 1s;
+    height: 95vh;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    z-index: 1;
 }
 .slideshow-image{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: all 2s;
+    opacity: 0 ;
 }
 /* SLIDE SHOW */
 
@@ -237,12 +283,18 @@ h3{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    cursor: pointer;
+}
+#academics:hover .academic-img, #coaches:hover .coaches-img{
+    transform: scale(1.03);
 }
 .academic-img-div, .coaches-img-div{
-    width: 70vw;
+    width: 80vw;
     height: auto;
+    overflow: hidden;
 }
 .academic-img,.coaches-img{
+    transition: all 2s;
     width: 100%;
     height: auto;
 }
@@ -277,6 +329,7 @@ h3{
     padding: 15px;
     border-radius: 20px;
 }
+
 #mentors{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -344,16 +397,17 @@ h3{
 }
 #cta-btn{
     margin-top: 100px;
-    border: 2px solid black;
+    border:1px solid black;
     background: none;
     padding: 25px 50px;
     font-size: 2rem;
     border-radius: 100px;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 #cta-btn:hover{
     background-color: white;
+    border:1px solid white;
 }
 #contact-us{
     display: flex;
