@@ -19,9 +19,14 @@
     <link rel="stylesheet" href="style.css">
     <!-- CSS -->
 
+
+    <!-- SCRIPT -->
+    <script src="logic.js" defer></script>
+    <!-- SCRIPT -->
+
 </head>
 <body>
-    <button id="show-menu">
+    <button id="show-menu" class="off">
         <svg id="menu-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
             <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
           </svg>
@@ -29,7 +34,7 @@
 
     <!-- MENU -->
     <div id="anchor-tag">
-        <a href="" class="anchors"> Home</a>
+        <a href="" class="anchors">Home</a>
         <a href="" class="anchors">Programs</a>
         <a href="" class="anchors">Contact</a>
         <a href="" class="anchors">Products</a>
@@ -45,27 +50,33 @@
     <!-- HERO DIV -->
     <div id="hero">
         <div id="hero-msg">
-            <p class="hero-para">
-                You’ve trained your hardest in the early stages. <br>
-                Acted on your vision. Nailed each and every training session. <br>
-                You’re ready for the fight <br>
-            </p>
+            <div class="hero-para-div">
+                <p class="hero-para hero-txt">
+                    You’ve trained your hardest in the early stages. </p>
+                    <p class="hero-para hero-txt">Acted on your vision. Nailed each and every training session. </p>
+                    <p class="hero-para hero-txt">You’re ready for the fight</p>
+                </p>
+            </div>
 
-            <h1>Be Greater Than Great</h1>
+            <h1 class="hero-txt">Be Greater Than Great</h1>
 
-            <p class="hero-para">
-                Join the <strong>Gyide</strong> academy of sports and athletics. <br>
-                Your fullest potential awaits you.
-            </p>            
+            <div class="hero-para-div">
+                <p class="hero-para hero-txt">
+                    Join the <strong>Gyide</strong> academy of sports and athletics.</p>
+                    <p class="hero-para hero-txt">Your fullest potential awaits you.</p>
+                </p>
+            </div> 
         </div>
 
         <div id="secondary-txt">
             <p id="scroll-para">Scroll more to unlock yourself</p>
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16" id="arrow-down">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-                  </svg>
-            </span>
+            <a href="#slide-show" id="scroll-link">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16" id="arrow-down">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                      </svg>
+                </span>
+            </a>
         </div>
     </div>
     <!-- HERO DIV -->
@@ -73,7 +84,7 @@
 
     <!-- SLIDE SHOW -->
     <div id="slide-show">
-        <img src="images/slideshow/4.jpg" alt="" srcset="" class="slideshow-image">
+        <img src="images/slideshow/1.jpg" alt="" srcset="" class="slideshow-image">
     </div>
     <!-- SLIDE SHOW -->
     
@@ -106,7 +117,7 @@
     
             <div id="coaches">
                 <div class="coaches-img-div">
-                    <img src="images/explain/pexels-victor-freitas-841130(1).jpg" alt="cycling-guy" class="academic-img">
+                    <img src="images/explain/pexels-victor-freitas-841130(1).jpg" alt="cycling-guy" class="coaches-img">
                 </div>
                 <div id="coaches-div">
                     <p id="coaches-header">Mentors -</p>
