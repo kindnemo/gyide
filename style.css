@@ -23,8 +23,8 @@ html{
     background-color: white;
 }
 #menu-svg{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 
@@ -60,12 +60,12 @@ html{
     height: 100vh;
     width: 70%;
     margin-left: 30%;
+    z-index: 8;
 }
 .anchor-img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: 9;
 }
 /* HAMBURGER MENU */
 
@@ -138,19 +138,20 @@ strong{
 /* SLIDE SHOW */
 #slide-show{
     height: 95vh;
-    -webkit-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -ms-transition: opacity 1s ease-in;
-    -o-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
-    z-index: 1;
+    z-index: 7;
 }
 .slideshow-image{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: all 2s;
-    opacity: 0 ;
+    z-index: 7;
+    position: absolute;
+    opacity: 1;
+    -webkit-transition: opacity .1s ease-in;
+    -moz-transition: opacity .1s ease-in;
+    -ms-transition: opacity .1s ease-in;
+    -o-transition: opacity .1s ease-in;
+    transition: opacity 0.5s;
 }
 /* SLIDE SHOW */
 
@@ -195,9 +196,12 @@ strong{
     align-items: center;
     background-color: black;
     color: white;
-    padding: 50px;
+    padding: 50px 30px 50px 30px;
     gap: 30px;
-    max-width: 390px;
+    transition: all 0.5s;
+}
+.offers:hover{
+    transform: scale(1.1);
 }
 .offer-explain-div{
     display: flex;
@@ -427,3 +431,175 @@ h3{
     color: black;
 }
 /* PROGRAMS */
+
+/* MEDIA QUERY */
+
+@media (max-width: 1211px){
+    #offer-div{
+        display: flex;
+        margin-top: 30px;
+        gap: 50px;
+    }
+}
+@media (max-width: 1140px){
+    #offer-div{
+        display: flex;
+        margin-top: 30px;
+        /* gap: 100px; */
+        padding: 10px ;
+    }
+    .benefit-para{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.1rem;
+    }
+    .offers{
+        padding: 20px 30px 30px 30px;
+        gap: 20px;
+    }
+}
+@media (max-width: 950px){
+    #offer-div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        /* gap: 100px; */
+        padding: 10px ;
+    }
+
+    #offer-div{
+    display: flex;
+    margin-top: 30px;
+    gap: 100px;
+    }
+    .offers{
+    padding: 50px 30px 50px 30px;
+    gap: 30px;
+    }
+    .benefit-para{
+        font-size: 1.5rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    .hero-para{
+        font-size: 2rem;
+    }
+    .anchors{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 800px){
+    #anchor-tag{
+        transform: translateX(-100vw);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+    }
+    .anchors{
+        font-size: 2.5rem;
+    }
+    #anchor-img-div{
+        display: none;
+    }
+
+    #contact-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #slide-show{
+        height: auto;
+        z-index: 0;
+    }
+    .slideshow-image{
+        height: auto;
+        width: 100%;
+        position: static;
+        object-fit: cover;
+    }
+    #show-menu{
+        bottom: 0;
+        margin: 50px 30px 30px 30px;
+        background-color: white;
+    }
+    #coaches-div, #academic-div{
+        flex-direction: column;
+        gap:10px;
+    }
+
+    #explain-heading, #explain-heading, #plan-heading, #why-heading {
+        font-size: 3rem;
+    }
+    .explain-para, .plan-para, .plan-para {
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 500px){
+    h1{
+        font-size: 1.5rem;
+    }
+    .hero-para{
+        font-size: 1.5rem;
+    }
+    #arrow-down{
+        width: 30px;
+        height: 30px;
+    }
+    #explain-heading, #explain-heading, #plan-heading, #why-heading {
+        font-size: 2rem;
+    }
+    .explain-para, .plan-para, .plan-para {
+        font-size: 1.3rem;
+    }
+
+    .offers{
+        width: 80vw;
+    }
+    h3{
+        font-size: 25px;
+    }
+    #motto-img-div{
+        height: auto;
+    }
+    .motto-img{
+        height: auto; 
+        width: 100%;
+    }
+    #cta-btn{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 400px){
+    #secondary-txt{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #explanation, #plans, #why-div, #programs{
+        padding: 200px 20px;
+    }
+    #explain-heading, #explain-heading, #plan-heading, #why-heading {
+        font-size: 2rem;
+    }
+    .explain-para, .plan-para, .plan-para {
+        font-size: 1.3rem;
+    }
+    .benefit-para{
+        font-size: 1.2rem;
+    }
+    .offer-explain-div{
+        gap: 30px;
+        margin: 30px 0;
+    }
+    #mentors, #centers{
+        font-size: 1rem;
+    }
+}
