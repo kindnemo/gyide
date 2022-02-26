@@ -7,6 +7,9 @@ const heroTxt = document.querySelectorAll(".hero-txt");
 // Menu Variables
 
 const slideShowImg = document.querySelectorAll(".slideshow-image");
+const coachesImg = document.querySelector(".coaches-img");
+const academicImg = document.querySelector(".academic-img");
+// IMAGES
 
 let showTxtCounter = 0;
 let slideShowCounter = 1;
@@ -73,3 +76,8 @@ window.onload = function () { //Moves the window to top on website reload
   }
 
 // setInterval(slideShow, 2000);
+
+if(window.innerWidth <= 800){
+    coachesImg.src = "images/explain/mob1.jpg"
+    academicImg.src = "images/explain/mob2.jpg"
+}
