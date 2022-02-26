@@ -74,6 +74,14 @@ html,*{
 
 
 /* Hero DIV STYLE */
+.hero-txt{
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
 #hero{
     height: 100vh;
     padding: 50px 50px 100px 50px;
@@ -102,14 +110,6 @@ h1{
     font-size: 3vw;
     font-family: 'Lusitana', serif;
     font-weight: 400;
-}
-.hero-txt{
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -ms-transition: opacity 1s ease-in;
-    -o-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
 }
 .opacity{
     opacity: 1 !important;
@@ -403,6 +403,7 @@ h3{
 }
 #cta-btn{
     margin-top: 100px;
+    font-family: 'Raleway', sans-serif;
     border:1px solid black;
     background: none;
     padding: 25px 50px;
@@ -542,6 +543,16 @@ h3{
     }
     .explain-para, .plan-para, .plan-para {
         font-size: 1.5rem;
+    }
+    .academic-img-div, .coaches-img-div{
+        width: 80vw;
+        height: 80vh;
+        overflow: hidden;
+    }
+    .academic-img,.coaches-img{
+        width: auto;
+        height: 100%;
+        object-fit: contain;
     }
 }
 @media(max-width: 500px){

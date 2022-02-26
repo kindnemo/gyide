@@ -73,3 +73,7 @@ window.onload = function () { //Moves the window to top on website reload
   }
 
 // setInterval(slideShow, 2000);
+
+if(window.innerWidth <= 800){
+    
+}
