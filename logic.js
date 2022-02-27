@@ -58,13 +58,13 @@ function showTxt(){
 
 // SLIDE SHOW FUNCTION
 function slideShow(){
-    console.log(slideShowCounter);
-    if(slideShowCounter == 20){
-        slideShowImg[slideShowCounter].classList.remove("opacity");
+    if(slideShowCounter >= slideShowImg.length){
         slideShowCounter = 1;
-        // return;
+        slideShowImg.forEach(ele => ele.style.opacity = "0");
     }
-    slideShowImg[slideShowCounter].classList.toggle("opacity");
+    slideShowImg[slideShowCounter].style.opacity = "1";
+    slideShowImg[slideShowCounter - 1].style.opacity = "0";
+
     slideShowCounter++;
 }
 
@@ -75,7 +75,7 @@ window.onload = function () { //Moves the window to top on website reload
     window.scrollTo(0, 0);
   }
 
-// setInterval(slideShow, 2000);
+setInterval(slideShow, 2000);
 
 if(window.innerWidth <= 800){
     coachesImg.src = "images/explain/mob1.jpg"
